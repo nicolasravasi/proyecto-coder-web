@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+header{
+    width: 100%;
+    background-color: #BF9075;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 560px;
+    margin-top: 20px;
+}
+
+h1{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    width: 50%;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 20px;
+}
+
+.search{
+    text-align: right;
+}
+
+.search input{
+    font-size: 18px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.seccionDos{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(2 1fr);
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-areas: 
+    "foto texto"
+    "foto boton";
+}
+
+@media (min-width: 320px) and (max-width: 1090px){
+    .seccionDos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.textoUno{
+    text-align: justify;
+    padding: 0px 20px 20px 20px;
+}
+
+.imgGato{
+    grid-area: foto;
+    width: auto;
+    height: 300px;
+    /* margin-left: 20px; */
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.596);
+}
+
+.textoDos{
+    grid-area: texto;
+    text-align: justify;
+    padding: 20px;
+    width: 550px;
+}
+
+#botonUno{
+    grid-area: boton;
+}
+
+.botonUno{
+    text-align: center;
+}
+
+.botonUno button{
+    margin-bottom: 20px;
+    font-size: 18px;
+    background-color: #F2D7B6;
+    color: black;
+    padding: 7px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+footer{
+    text-align: center;
+    background-color: #BF9075;
+    padding: 20px 0px 20px 20px;
+}
+
+.textoTres{
+    font-size: 16px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.email{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.redesSociales img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 8px;
+}
+
+.ultTexto{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* Experiences */
+
+.contenedorExper{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(3 1fr);
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    grid-template-areas: 
+    "londres ."
+    ". madrid "
+    "malta ."
+    ;
+}
+
+#londres{
+    grid-area: londres;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#madrid{
+    grid-area: madrid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#malta{
+    grid-area: malta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3{
+    padding-bottom: 20px;
+    margin-left: 8px;
+}
+
+.imagenLondon{
+    width: auto;
+    height: 300px;
+    margin-left: 8px;
+    padding-bottom: 10px;
+}
+
+p{
+    margin: 0px 5px 0px 8px;
+    font-size: 16px;
+    padding-bottom: 8px;
+    text-align: justify;
+}
+
+button{
+    margin: 0px 0px 20px 8px;
+    font-size: 16px;
+    background-color: #F2D7B6;
+    color: black;
+    padding: 7px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.imagenMadrid{
+    width: auto;
+    height: 300px;
+    padding-bottom: 8px;
+}
+
+#textoMad{
+    padding-bottom: 8px;
+    padding-right: 8px;
+}
+
+#botonMad{
+    font-size: 16px;
+    background-color: #F2D7B6;
+    color: black;
+    padding: 7px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.imagenMalta{
+    width: auto;
+    height: 300px;
+    margin-left: 8px;
+    padding-bottom: 8px;
+}
+
+@media (min-width: 320px) and (max-width: 1000px){
+    .contenedorExper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 800px){
+    nav a{
+        font-size: 18px;
+    }
+
+    nav{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .search{
+        text-align: center;
+    }
+}
+
+/* Tips */
+
+.textoTip{
+    text-align: justify;
+    margin-right: 5px;
+}
+
+/* FAQ's */
+
+iframe{
+    margin-left: 8px;
+    padding-bottom: 8px;
+}
+
+/* Contact me */
+
+form{
+    text-align: center;
+}
+
+.formulario{
+    margin: 8px;
+}
+
+.botonesFormulario{
+    display: block;
+}
+
+.botonesFormulario input{
+    margin: 5px 5px 12px 5px;
+    font-size: 14px;
+    background-color: #F2D7B6;
+    color: black;
+    padding: 5px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.formulario label{
+    font-size: 18px;
+}
