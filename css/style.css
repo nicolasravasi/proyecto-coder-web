@@ -6,7 +6,10 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-
+body{
+    width: 100%;
+    background-color: #F2F2F2;
+}
 
 header{
     width: 100%;
