@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Home</title>
 </head>
 
@@ -24,7 +25,7 @@
             </ul>
         </nav>
         <div class="search">
-            <input type="search" placeholder="search">
+            <input type="search" placeholder="search" data-aos="zoom-in" >
         </div>
     </header>
 
@@ -59,7 +60,7 @@
                     rerum eius et, distinctio eveniet tempora impedit perferendis quibusdam
                     quaerat?
                 </p>
-                <div class="botonUno">
+                <div class="botonUno" data-aos="fade-up">
                     <button id="botonUno">Explore more</button>
                 </div>
             </div>
@@ -80,6 +81,12 @@
 
         <p class="ultTexto">Copyright, Nicolas Ravasi.</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

@@ -23,6 +23,11 @@ header{
     margin-top: 20px;
 }
 
+.logo:hover {
+    transform: rotate(360deg);
+    transition: all 1s cubic-bezier(1,0,0,1);
+}
+
 h1{
     padding-bottom: 20px;
     text-align: center;
@@ -158,6 +163,8 @@ footer{
 /* Experiences */
 
 .contenedorExper{
+    margin-bottom: 20px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(2 1fr);
     grid-template-rows: repeat(3 1fr);
@@ -180,6 +187,8 @@ footer{
 }
 
 #madrid{
+    margin-top: 20px;
+    margin-bottom: 20px;
     grid-area: madrid;
     display: flex;
     justify-content: center;
@@ -204,7 +213,19 @@ h3{
     width: auto;
     height: 300px;
     margin-left: 8px;
-    padding-bottom: 10px;
+}
+
+.animacion:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+.textosExp {
+    margin: 0px 5px 0px 8px;
+    width: 350px;
+    font-size: 16px;
+    padding-bottom: 8px;
+    text-align: justify;
 }
 
 p{
@@ -299,7 +320,19 @@ form{
 }
 
 .formulario{
-    margin: 8px;
+    margin: 18px;
+}
+
+.apellido {
+    width: 100px;
+    height: auto;
+    transition: all 0.5s;
+}
+
+.apellido:focus {
+    width: 150px;
+    height: auto;
+    font-size: 26;
 }
 
 .botonesFormulario{
