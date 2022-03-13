@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Tips</title>
 </head>
 
@@ -13,7 +15,7 @@
     <header>
         <a href="../index.html"><img class="logo" src="../img/logo-blog.png" alt="logo"></a>
         <h1><a href="../index.html">Nico Blog</a></h1>
-        <nav>
+        <!-- <nav>
             <ul>
                 <li> <a href="../index.html">Home</a></li>
                 <li> <a href="experiences.html">Experiences</a> </li>
@@ -24,25 +26,71 @@
         </nav>
         <div class="search" >
             <input type="search" placeholder="search">
-        </div>
+        </div> -->
+
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./experiences.html">Experiences</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tips
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./tips.html#tip1">Tip 1</a></li>
+                                <li><a class="dropdown-item" href="./tips.html#tip2">Tip 2</a></li>
+                                <li><a class="dropdown-item" href="./tips.html#tip3">Tip 3</a></li>
+                                <li><a class="dropdown-item" href="./tips.html#tip4">Tip 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./faqs.html">FAQ's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactme.html">Contact me</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
     </header>
 
     <main>
         <h2>Tips</h2>
 
         <div>
-            <h3>Tip 1</h3>
-            <p class="textoTip" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo illum laudantium aut asperiores voluptates assumenda quisquam sint harum velit quia ipsum mollitia non ad dolores beatae eius, totam similique, magnam, cumque nostrum odit fugit vel aspernatur earum. Aut, eos eaque!</p>
+            <h3 id="tip1" >Tip 1</h3>
+            <p class="textoTip" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reprehenderit cupiditate necessitatibus odit iure, voluptate ducimus vitae quo voluptas fugiat dolor eaque, temporibus ipsum error blanditiis fugit aut libero laboriosam accusantium nostrum repudiandae aspernatur eum saepe! Neque numquam, possimus cupiditate asperiores rem libero placeat maiores nam ad dolores alias dolorum. Possimus earum dolores nesciunt excepturi perspiciatis! Asperiores enim est maiores, culpa, exercitationem accusamus vel doloremque, minus odit ex praesentium ea quibusdam ipsa error nostrum unde eius corporis numquam? Ullam nesciunt molestias voluptatum inventore dignissimos voluptates. Saepe laborum at molestiae quaerat beatae ab nesciunt ducimus dolorum placeat incidunt iste vel, voluptatem numquam earum libero hic reiciendis voluptatibus eligendi temporibus rem modi? Sed temporibus sit ab voluptatibus ullam fuga veniam porro, facilis ad totam alias quis fugit labore voluptatem debitis facere fugiat possimus asperiores iure ipsam magni excepturi? Libero tempora suscipit voluptatem ex praesentium illo fugiat, modi doloribus, minima asperiores at similique itaque nobis amet molestias laborum obcaecati omnis? Nobis quas tenetur deserunt aut sunt! Harum repudiandae veritatis esse mollitia reprehenderit numquam vitae deleniti iusto qui voluptatum, praesentium consequatur, vel culpa eum voluptatibus non molestiae sit nobis? Nulla vero quas eaque aliquam ipsum assumenda, corporis sit illo officia nesciunt, placeat temporibus tenetur vitae tempore iusto, ex quos? Ipsum adipisci accusamus distinctio, quas inventore cupiditate, incidunt autem enim veniam delectus earum, eos ut consequuntur quod esse repellendus vel praesentium sapiente obcaecati? Minima eaque corporis, possimus et id, odio cum nisi nihil similique doloremque quo repellendus velit ad incidunt illum labore aut sint veritatis officia sed. Veniam facere similique quae quo excepturi dolore pariatur perferendis error tempore, praesentium minus, tenetur fugiat maxime eius aliquid, molestiae dolores. Deserunt sint magni nihil doloribus ducimus id voluptatum aliquid exercitationem suscipit, blanditiis praesentium, accusamus enim vel a fugit? Fuga deleniti perspiciatis neque aperiam minus asperiores quae natus eligendi.</p> 
+            <br><br><br><br><br><br><br><br><br><br>
         </div>
 
         <div>
-            <h3>Tip 2</h3>
-            <p class="textoTip" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempora neque ullam, recusandae in illum corporis ipsum placeat quo porro modi nesciunt vero a nemo officiis fugit saepe inventore veniam.</p>
+            <h3 id="tip2" >Tip 2</h3>
+            <p class="textoTip" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempora neque ullam, recusandae in illum corporis ipsum placeat quo porro modi nesciunt vero a nemo officiis fugit saepe inventore veniam.</p> 
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
 
         <div>
-            <h3>Tip 3</h3>
-            <p class="textoTip" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ipsam, minima mollitia eveniet reprehenderit, aperiam assumenda perspiciatis reiciendis quia ea hic, quod nisi? Unde minus harum iusto, architecto exercitationem nisi adipisci. Eveniet impedit asperiores enim.</p>
+            <h3 id="tip3" >Tip 3</h3>
+            <p class="textoTip" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ipsam, minima mollitia eveniet reprehenderit, aperiam assumenda perspiciatis reiciendis quia ea hic, quod nisi? Unde minus harum iusto, architecto exercitationem nisi adipisci. Eveniet impedit asperiores enim.</p> 
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+
+        <div>
+            <h3 id="tip4" >Tip 4</h3>
+            <p class="textoTip" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore neque consequatur? Aliquid nesciunt dolor temporibus perferendis, quas nisi aliquam sunt illo ipsa iste excepturi nobis architecto veniam nam velit non vitae veritatis dolorum natus impedit? Tempore fugit cum sit quisquam harum saepe eligendi ullam sequi temporibus, magnam cumque nemo obcaecati possimus accusamus, dolor sint, maiores ipsa. Architecto provident magni nostrum, excepturi facilis quidem velit facere, nemo odit ducimus repellat molestias dolorum suscipit. Incidunt nihil nobis fuga eligendi omnis? Minus!</p>
         </div>
     </main>
 
@@ -58,6 +106,11 @@
         </div>
         <p class="ultTexto" >Copyright, Nicolas Ravasi.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
 </body>
 
 </html>

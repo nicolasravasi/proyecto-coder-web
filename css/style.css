@@ -13,7 +13,7 @@ body{
 
 header{
     width: 100%;
-    background-color: #BF9075;
+    background-color: #3F76A6;
 }
 
 .logo{
@@ -39,7 +39,12 @@ h1 a{
 }
 
 nav{
-    width: 50%;
+    width: auto;
+}
+
+#nav {
+    background-color: #0E3D59;
+    color: white;
 }
 
 nav ul li{
@@ -122,7 +127,7 @@ h2{
 .botonUno button{
     margin-bottom: 20px;
     font-size: 18px;
-    background-color: #F2D7B6;
+    background-color: #D93636;
     color: black;
     padding: 7px;
     border: none;
@@ -132,7 +137,7 @@ h2{
 
 footer{
     text-align: center;
-    background-color: #BF9075;
+    background-color: #3F76A6;
     padding: 20px 0px 20px 20px;
 }
 
@@ -162,7 +167,16 @@ footer{
 
 /* Experiences */
 
-.contenedorExper{
+/* Modificacion con GRID */
+
+.contendorCards {
+    margin-left: 6rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* .contenedorExper{
     margin-bottom: 20px;
     margin-top: 20px;
     display: grid;
@@ -176,7 +190,7 @@ footer{
     ". madrid "
     "malta ."
     ;
-}
+} */
 
 #londres{
     grid-area: londres;
@@ -238,12 +252,16 @@ p{
 button{
     margin: 0px 0px 20px 8px;
     font-size: 16px;
-    background-color: #F2D7B6;
+    background-color: #D93636;
     color: black;
     padding: 7px;
     border: none;
     text-transform: uppercase;
     border-radius: 10px;
+}
+
+.botonRojo {
+    background-color: #D93636 !important;
 }
 
 .imagenMadrid{
@@ -259,7 +277,7 @@ button{
 
 #botonMad{
     font-size: 16px;
-    background-color: #F2D7B6;
+    background-color: #D93636;
     color: black;
     padding: 7px;
     border: none;
@@ -342,7 +360,7 @@ form{
 .botonesFormulario input{
     margin: 5px 5px 12px 5px;
     font-size: 14px;
-    background-color: #F2D7B6;
+    background-color: #D93636;
     color: black;
     padding: 5px;
     border: none;
