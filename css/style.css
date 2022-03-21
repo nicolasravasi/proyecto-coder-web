@@ -52,7 +52,7 @@ nav ul li{
 }
 
 nav a{
-    color: black;
+    color: white;
     text-decoration: none;
     margin: 8px;
     font-size: 20px;
@@ -167,13 +167,8 @@ footer{
 
 /* Experiences */
 
-/* Modificacion con GRID */
-
-.contendorCards {
-    margin-left: 6rem;
-    padding-bottom: 2rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.container-fluid {
+    margin-bottom: 20px;
 }
 
 /* .contenedorExper{

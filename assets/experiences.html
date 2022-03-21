@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Experiences</title>
 </head>
 
@@ -15,18 +15,6 @@
     <header>
         <a href="../index.html"><img class="logo" src="../img/logo-blog.png" alt="logo"></a>
         <h1><a href="../index.html">Nico Blog</a></h1>
-        <!-- <nav>
-            <ul>
-                <li> <a href="../index.html">Home</a></li>
-                <li> <a href="#">Experiences</a> </li>
-                <li> <a href="tips.html">Tips</a> </li>
-                <li> <a href="faqs.html">FAQ's</a> </li>
-                <li> <a href="contactme.html">Contact me</a> </li>
-            </ul>
-        </nav>
-        <div class="search">
-            <input type="search" placeholder="search">
-        </div> -->
 
         <nav id="nav" class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -66,81 +54,49 @@
         </nav>
     </header>
 
+
+    <!-- El MAIN con Sistema de grillas) -->
+
+    
     <main>
         <h2>Experiences</h2>
 
-        <div class="contendorCards">
-            <!-- <div id="londres" class="animacion">
-            <h3>London, England</h3>
-            <img class="imagenLondon" src="../img/london.jpg" alt="london">
-                <p class="textosExp">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus optio amet aperiam quibusdam
-                    laborum modi!
-                </p>
-            <div>
-                <button>Keep reading...</button>
-            </div>
-        </div> -->
-
-            <!-- CARD de BOOTSTRAP London -->
-
-
-            <div class="card animacion" style="width: 18rem; box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.596);">
-                <img src="../img/london.jpg" class="card-img-top" alt="Imagen de London">
-                <div class="card-body">
-                    <h5 class="card-title">London, England</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn botonRojo">Keep reading</a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-4 mt-3 mb-3">
+                    <div class="card animacion mx-auto" style="width: 18rem; box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.596);">
+                        <img src="../img/london.jpg" class="card-img-top" alt="Imagen de London">
+                        <div class="card-body">
+                            <h5 class="card-title">London, England</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a href="#" class="btn botonRojo">Keep reading</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mt-3 mb-3">
+                    <div class="card animacion mx-auto" style="width: 18rem; box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.596);">
+                        <img src="../img/madrid.jpg" class="card-img-top" alt="Imagen de Madrid">
+                        <div class="card-body">
+                            <h5 class="card-title">Madrid, Spain</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a href="#" class="btn botonRojo">Keep reading</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mt-3 mb-3">
+                    <div class="card animacion mx-auto" style="width: 18rem; box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.596);">
+                        <img src="../img/malta.jpg" class="card-img-top" alt="Imagen de Malta">
+                        <div class="card-body">
+                            <h5 class="card-title">Saint Julian's, Malta</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a href="#" class="btn botonRojo">Keep reading</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
-            <!-- <div id="madrid" class="animacion">
-                <h3 class="madrid">Madrid, Spain</h3>
-                <img class="imagenMadrid" src="../img/madrid.jpg" alt="madrid">
-                <p id="textoMad" class="textosExp">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eum, autem eius inventore doloribus
-                    nesciunt quibusdam placeat, officia vel sapiente iure! Aliquam sed exercitationem aperiam?
-                </p>
-                <div>
-                    <button id="botonMad">Keep reading...</button>
-                </div>
-            </div> -->
-
-
-            <div class="card animacion" style="width: 18rem; box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.596);">
-                <img src="../img/madrid.jpg" class="card-img-top" alt="Imagen de Madrid">
-                <div class="card-body">
-                    <h5 class="card-title">Madrid, Spain</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn botonRojo">Keep reading</a>
-                </div>
-            </div>
-
-            <!-- <div id="malta" class="animacion">
-                <h3>Saint Julian's, Malta</h3>
-                <img class="imagenMalta" src="../img/malta.jpg" alt="malta">
-                <p class="textosExp">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque consequuntur nemo dolorem?
-                    Mollitia provident iste temporibus ratione ipsam praesentium. Ut!
-                </p>
-                <div>
-                    <button>Keep reading...</button>
-                </div>
-            </div> -->
-
-            <div class="card animacion" style="width: 18rem; box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.596);">
-                <img src="../img/malta.jpg" class="card-img-top" alt="Imagen de Malta">
-                <div class="card-body">
-                    <h5 class="card-title">Sain Julian's, Malta</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn botonRojo">Keep reading</a>
-                </div>
-            </div>
-
         </div>
     </main>
 
