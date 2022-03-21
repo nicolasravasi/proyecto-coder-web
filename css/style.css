@@ -17,10 +17,7 @@ header{
 }
 
 .logo{
-    width: 100px;
     height: 100px;
-    margin-left: 560px;
-    margin-top: 20px;
 }
 
 .logo:hover {
@@ -38,34 +35,17 @@ h1 a{
     color: black;
 }
 
-nav{
-    width: auto;
-}
-
-#nav {
-    background-color: #0E3D59;
-    color: white;
-}
-
-nav ul li{
-    display: inline;
-}
-
-nav a{
-    color: white;
+h1 a:hover {
     text-decoration: none;
-    margin: 8px;
-    font-size: 20px;
+    color: black;
 }
 
-.search{
-    text-align: right;
-}
-
-.search input{
-    font-size: 18px;
-    margin-bottom: 8px;
-    margin-right: 8px;
+.navbar .navbar-collapse .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+    padding-right: 0;
+    align-items: flex-end;
 }
 
 h2{
@@ -326,6 +306,16 @@ iframe{
     padding-bottom: 8px;
 }
 
+.datos{
+    margin-right: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 456px){
+    iframe{
+        width: 250px;
+    }
+}
+
 /* Contact me */
 
 form{
@@ -365,4 +355,10 @@ form{
 
 .formulario label{
     font-size: 18px;
+}
+
+@media (min-width: 320px) and (max-width: 368px){
+    #opiniones{
+        width: 200px;
+    }
 }
