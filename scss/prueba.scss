@@ -6,11 +6,28 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-//declaracion de valiables globales 
+//declaracion de variables globales 
 
 $color1: #F2F2F2;
 $color2: #3F76A6;
 $width: 100%; 
+
+// delcaracion de mixin
+
+@mixin imgRedes ($width, $height, $padding, $marginbottom) {
+    margin-bottom: $marginbottom;
+    height: $height;
+    padding: $padding;
+    width: $width;
+}
+
+
+@mixin tituloPrincipal ($padding, $text, $margin) {
+    text-align: $text;
+    margin-top: $margin;
+    padding-bottom: $padding;
+}
+
 
 body{
     width: $width;
@@ -29,9 +46,7 @@ body{
             }
         }
         h1{
-            padding-bottom: 20px;
-            text-align: center;
-            margin-top: 20px;
+            @include tituloPrincipal (20px, center, 20px);
         }
         .navbar{
             .navbar-collapse{
@@ -102,13 +117,12 @@ body{
         background-color: #3F76A6;
         padding: 20px 0px 20px 20px;
         .textoTres{
-            font-size: 16px;
-            padding-bottom: 5px;
+            @extend .email;
             text-align: center;
         }
         .email{
             font-size: 16px;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
         }
         #send{
             margin: 0px 0px 20px 8px;
@@ -122,10 +136,7 @@ body{
         }
         .redesSociales{
             img{
-                width: 50px;
-                height: 50px;
-                padding: 5px;
-                margin-bottom: 8px;
+                @include imgRedes(50px, 50px, 5px, 8px);
             }
         }
         .ultTexto{
