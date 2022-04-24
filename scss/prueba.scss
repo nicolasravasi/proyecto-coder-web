@@ -147,17 +147,6 @@ body{
 }
 
 
-@media (min-width: 320px) and (max-width: 1090px){
-    .seccionDos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-}
-
-
 /* Experiences */
 
 main{ 
@@ -221,7 +210,19 @@ main{
 
 .textoTip{
     text-align: justify;
-    margin-right: 5px;
+    padding: 0px 20px 20px 20px;
+}
+
+#tip1{
+    padding-left: 10px;
+}
+
+#tip2{
+    padding-left: 10px;
+}
+
+#tip3{
+    padding-left: 10px;
 }
 
 /* FAQ's */

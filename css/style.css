@@ -91,14 +91,6 @@ body {
       font-size: 14px;
       text-align: center; }
 
-@media (min-width: 320px) and (max-width: 1090px) {
-  .seccionDos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center; } }
-
 /* Experiences */
 main h2 {
   text-align: center;
@@ -141,7 +133,16 @@ main .container-fluid {
 /* Tips */
 .textoTip {
   text-align: justify;
-  margin-right: 5px; }
+  padding: 0px 20px 20px 20px; }
+
+#tip1 {
+  padding-left: 10px; }
+
+#tip2 {
+  padding-left: 10px; }
+
+#tip3 {
+  padding-left: 10px; }
 
 /* FAQ's */
 iframe {
